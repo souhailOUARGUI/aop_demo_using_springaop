@@ -12,6 +12,7 @@ public class AopDemoUsingSpringaopApplication {
     public static void main(String[] args) {
         ApplicationContext  context = new AnnotationConfigApplicationContext(AopDemoUsingSpringaopApplication.class);
         IMetier metier = context.getBean(IMetier.class);
+        System.out.println(metier.getClass().getName());
         metier.process();
         System.out.println(metier.compute());
 
