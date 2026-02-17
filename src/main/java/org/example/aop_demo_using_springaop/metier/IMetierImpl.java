@@ -18,7 +18,7 @@ public class IMetierImpl implements IMetier
 
 
     @Log
-    @SecuredByAspect(roles = {"USER"})
+    @SecuredByAspect(roles = {"ADMIN"})
     @Override
     public double compute() {
         double data= 80;
