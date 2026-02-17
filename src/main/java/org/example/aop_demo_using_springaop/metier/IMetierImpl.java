@@ -1,4 +1,4 @@
-package org.example.aop_demo_using_springaop;
+package org.example.aop_demo_using_springaop.metier;
 
 
 import org.springframework.stereotype.Service;
