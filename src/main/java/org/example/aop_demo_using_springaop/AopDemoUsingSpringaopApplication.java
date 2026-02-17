@@ -11,7 +11,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class AopDemoUsingSpringaopApplication {
 
     public static void main(String[] args) {
-        SecurityContext.authenticate("root", "1234", new String[]{"USER", "ADMIN"});
+        SecurityContext.authenticate("root", "1234", new String[]{"USER"});
         ApplicationContext  context = new AnnotationConfigApplicationContext(AopDemoUsingSpringaopApplication.class);
         IMetier metier = context.getBean(IMetier.class);
         System.out.println(metier.getClass().getName());
